@@ -32,7 +32,7 @@ public class ZuulLoggingFilter extends ZuulFilter {
     @Override
     public Object run() throws ZuulException {
         HttpServletRequest request = RequestContext.getCurrentContext().getRequest();
-        logger.info("ZUUUUUUUUUUUUUL!!! Request: [{}]. Request uri: [{}]", request, request.getRequestURI());
+        logger.info("Request: [{}]. Request uri: [{}]", request, request.getRequestURI());
         return null;
     }
 }
